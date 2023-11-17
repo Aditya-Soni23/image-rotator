@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Rotator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <input type="file" id="imageInput" accept="image/*" class="input-file">
+    <div class="buttons-container">
+      <button onclick="rotateRight()" class="btn">Rotate Right</button>
+      <button onclick="rotateLeft()" class="btn">Rotate Left</button>
+      <button onclick="rotateUpsideDown()" class="btn">Rotate Upside Down</button>
+      <button onclick="resetImage()" class="btn">Reset</button>
+      <button onclick="downloadImage()" class="btn">Download</button>
+    </div>
+    <canvas id="canvas" class="canvas"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
